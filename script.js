@@ -1,10 +1,16 @@
-// Contact Form Submission
+// Smooth Scrolling
+function scrollToSection(id) {
+    document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+}
+
+// Toggle Details
+function toggleDetails(id) {
+    const details = document.getElementById(id);
+    details.style.display = details.style.display === 'none' ? 'block' : 'none';
+}
+
+// Contact Form Placeholder
 document.getElementById('contact-form').addEventListener('submit', function (event) {
     event.preventDefault();
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const message = document.getElementById('message').value;
-
-    // Placeholder for backend integration
-    alert(`Thank you, ${name}! Your message has been sent.`);
+    alert('Thank you! Your message has been submitted.');
 });
