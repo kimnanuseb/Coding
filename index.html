@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Giovanni Nanuseb Portfolio</title>
+    <title>Giovanni Nanuseb | Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
@@ -12,90 +12,116 @@
     <header id="hero">
         <div class="hero-content">
             <h1>Giovanni Nanuseb</h1>
-            <p>Innovator | Web Developer | Creative Problem Solver</p>
-            <button onclick="scrollToSection('contact')">Hire Me</button>
+            <p>Innovative Web Developer | Graphic Designer | Creative Technologist</p>
+            <div class="metrics">
+                <div class="metric"><h2>5+</h2><p>Years Experience</p></div>
+                <div class="metric"><h2>20+</h2><p>Projects Completed</p></div>
+                <div class="metric"><h2>15+</h2><p>Happy Clients</p></div>
+            </div>
+            <button onclick="scrollToSection('about')">Learn More</button>
         </div>
     </header>
 
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <img src="your-photo.jpg" alt="Giovanni Nanuseb">
+            <p>
+                I am a passionate web developer with expertise in creating visually stunning and functional digital solutions. With years of experience, I've honed my skills in coding, design, and innovative problem-solving to help businesses thrive in the tech world.
+            </p>
+        </div>
+    </section>
+
     <!-- Skills Section -->
     <section id="skills">
-        <h2>Skills</h2>
-        <div class="skill">
-            <h3>HTML</h3>
-            <div class="progress-bar"><span style="width: 90%;"></span></div>
-        </div>
-        <div class="skill">
-            <h3>CSS</h3>
-            <div class="progress-bar"><span style="width: 85%;"></span></div>
-        </div>
-        <div class="skill">
-            <h3>JavaScript</h3>
-            <div class="progress-bar"><span style="width: 80%;"></span></div>
+        <h2>Skills & Tools</h2>
+        <div class="skills-grid">
+            <div class="skill">
+                <h3>HTML</h3>
+                <div class="progress-bar"><span style="width: 95%;"></span></div>
+            </div>
+            <div class="skill">
+                <h3>CSS</h3>
+                <div class="progress-bar"><span style="width: 90%;"></span></div>
+            </div>
+            <div class="skill">
+                <h3>JavaScript</h3>
+                <div class="progress-bar"><span style="width: 85%;"></span></div>
+            </div>
+            <div class="skill">
+                <h3>React</h3>
+                <div class="progress-bar"><span style="width: 80%;"></span></div>
+            </div>
+            <div class="skill">
+                <h3>Figma</h3>
+                <div class="progress-bar"><span style="width: 75%;"></span></div>
+            </div>
         </div>
     </section>
 
     <!-- Projects Section -->
     <section id="projects">
         <h2>Projects</h2>
-        <div class="project-card">
-            <h3>Weather Assistant App</h3>
-            <p>Real-time weather app providing accurate forecasts.</p>
-            <a href="https://kimnanuseb.github.io/Weather-Assistent-App/" target="_blank">View Project</a>
-        </div>
-        <div class="project-card">
-            <h3>Cook With Kimi</h3>
-            <p>AI-powered recipe assistant for meal planning.</p>
-            <a href="https://kimnanuseb.github.io/cook-with-kimi/" target="_blank">View Project</a>
-        </div>
-        <div class="project-card">
-            <h3>Cook With Kimi</h3>
-            <p>AI-powered recipe assistant for meal planning.</p>
-            <a href="https://kimnanuseb.github.io/cook-with-kimi/" target="_blank">View Project</a>
-        </div>
-        <div class="project-card">
-            <h3>Cook With Kimi</h3>
-            <p>AI-powered recipe assistant for meal planning.</p>
-            <a href="https://kimnanuseb.github.io/cook-with-kimi/" target="_blank">View Project</a>
-        </div>
-        <div class="project-card">
-            <h3>Cook With Kimi</h3>
-            <p>AI-powered recipe assistant for meal planning.</p>
-            <a href="https://kimnanuseb.github.io/cook-with-kimi/" target="_blank">View Project</a>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Weather Assistant App</h3>
+                <p>A real-time weather forecast app. Built using JavaScript and OpenWeather API.</p>
+                <a href="#" target="_blank">View Demo</a>
+                <a href="#" target="_blank">GitHub Code</a>
+            </div>
+            <div class="project-card">
+                <h3>Cook with Kimi</h3>
+                <p>An AI-powered recipe assistant to simplify meal planning.</p>
+                <a href="#" target="_blank">View Demo</a>
+                <a href="#" target="_blank">GitHub Code</a>
+            </div>
+             <div class="project-card">
+                <h3>Weather Assistant App</h3>
+                <p>A real-time weather forecast app. Built using JavaScript and OpenWeather API.</p>
+                <a href="#" target="_blank">View Demo</a>
+                <a href="#" target="_blank">GitHub Code</a>
+            </div>
+            <div class="project-card">
+                <h3>Cook with Kimi</h3>
+                <p>An AI-powered recipe assistant to simplify meal planning.</p>
+                <a href="#" target="_blank">View Demo</a>
+                <a href="#" target="_blank">GitHub Code</a>
+            </div>
         </div>
     </section>
 
-     <!-- Experience Section -->
+    <!-- Experience Section -->
     <section id="experience">
         <h2>Experience</h2>
-        <div class="experience-item">
-            <h3>Real Estate Agent</h3>
-            <p>Seeff Properties Namibia</p>
-            <button onclick="toggleDetails('exp1')">More Details</button>
-            <p id="exp1" class="details">Sold properties and managed client relationships with a focus on customer satisfaction and timely deliverables.</p>
-        </div>
-         <div class="experience-item">
-            <h3>Real Estate Agent</h3>
-            <p>Seeff Properties Namibia</p>
-            <button onclick="toggleDetails('exp1')">More Details</button>
-            <p id="exp1" class="details">Sold properties and managed client relationships with a focus on customer satisfaction and timely deliverables.</p>
-        </div>
-         <div class="experience-item">
-            <h3>Real Estate Agent</h3>
-            <p>Seeff Properties Namibia</p>
-            <button onclick="toggleDetails('exp1')">More Details</button>
-            <p id="exp1" class="details">Sold properties and managed client relationships with a focus on customer satisfaction and timely deliverables.</p>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>Real Estate Agent</h3>
+                <p>Seeff Properties Namibia | 2022 - Present</p>
+                <p>Provided exceptional service by managing property listings and sales, improving client satisfaction rates.</p>
+            </div>
+            <div class="timeline-item">
+                <h3>Web Developer Intern</h3>
+                <p>Freelance | 2019 - 2021</p>
+                <p>Developed websites for small businesses, focusing on responsive design and user-friendly interfaces.</p>
+            </div>
         </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact">
         <h2>Contact Me</h2>
+        <p>I'd love to hear from you. Whether you have a project in mind or just want to chat, feel free to reach out.</p>
         <form id="contact-form">
             <input type="text" id="name" placeholder="Your Name" required>
             <input type="email" id="email" placeholder="Your Email" required>
             <textarea id="message" placeholder="Your Message" required></textarea>
             <button type="submit">Send</button>
         </form>
+        <div class="social-links">
+            <a href="#">GitHub</a>
+            <a href="#">Email</a>
+        </div>
     </section>
 </body>
 </html>
