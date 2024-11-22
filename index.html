@@ -3,15 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Giovanni Nanuseb - Portfolio</title>
+    <title>Giovanni Nanuseb Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
 <body>
     <!-- Hero Section -->
     <header id="hero">
-        <h1>Giovanni Nanuseb</h1>
-        <p>Innovator | Web Developer | Creative Problem Solver</p>
+        <div class="hero-content">
+            <h1>Giovanni Nanuseb</h1>
+            <p>Innovator | Web Developer | Creative Problem Solver</p>
+            <button onclick="scrollToSection('contact')">Hire Me</button>
+        </div>
     </header>
 
     <!-- Skills Section -->
@@ -27,22 +30,60 @@
         </div>
         <div class="skill">
             <h3>JavaScript</h3>
-            <div class="progress-bar"><span style="width: 75%;"></span></div>
+            <div class="progress-bar"><span style="width: 80%;"></span></div>
         </div>
     </section>
 
     <!-- Projects Section -->
     <section id="projects">
         <h2>Projects</h2>
-        <div class="project">
+        <div class="project-card">
             <h3>Weather Assistant App</h3>
-            <p>A fully functional app providing real-time weather forecasts using an API.</p>
+            <p>Real-time weather app providing accurate forecasts.</p>
             <a href="https://kimnanuseb.github.io/Weather-Assistent-App/" target="_blank">View Project</a>
         </div>
-        <div class="project">
+        <div class="project-card">
             <h3>Cook With Kimi</h3>
-            <p>An interactive recipe assistant using AI for meal planning and cooking inspiration.</p>
+            <p>AI-powered recipe assistant for meal planning.</p>
             <a href="https://kimnanuseb.github.io/cook-with-kimi/" target="_blank">View Project</a>
+        </div>
+        <div class="project-card">
+            <h3>Cook With Kimi</h3>
+            <p>AI-powered recipe assistant for meal planning.</p>
+            <a href="https://kimnanuseb.github.io/cook-with-kimi/" target="_blank">View Project</a>
+        </div>
+        <div class="project-card">
+            <h3>Cook With Kimi</h3>
+            <p>AI-powered recipe assistant for meal planning.</p>
+            <a href="https://kimnanuseb.github.io/cook-with-kimi/" target="_blank">View Project</a>
+        </div>
+        <div class="project-card">
+            <h3>Cook With Kimi</h3>
+            <p>AI-powered recipe assistant for meal planning.</p>
+            <a href="https://kimnanuseb.github.io/cook-with-kimi/" target="_blank">View Project</a>
+        </div>
+    </section>
+
+     <!-- Experience Section -->
+    <section id="experience">
+        <h2>Experience</h2>
+        <div class="experience-item">
+            <h3>Real Estate Agent</h3>
+            <p>Seeff Properties Namibia</p>
+            <button onclick="toggleDetails('exp1')">More Details</button>
+            <p id="exp1" class="details">Sold properties and managed client relationships with a focus on customer satisfaction and timely deliverables.</p>
+        </div>
+         <div class="experience-item">
+            <h3>Real Estate Agent</h3>
+            <p>Seeff Properties Namibia</p>
+            <button onclick="toggleDetails('exp1')">More Details</button>
+            <p id="exp1" class="details">Sold properties and managed client relationships with a focus on customer satisfaction and timely deliverables.</p>
+        </div>
+         <div class="experience-item">
+            <h3>Real Estate Agent</h3>
+            <p>Seeff Properties Namibia</p>
+            <button onclick="toggleDetails('exp1')">More Details</button>
+            <p id="exp1" class="details">Sold properties and managed client relationships with a focus on customer satisfaction and timely deliverables.</p>
         </div>
     </section>
 
