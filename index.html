@@ -1,68 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giovanni Nanuseb - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1>Hi, I'm <span>Your Name</span></h1>
-      <p>A Passionate <span>Your Profession</span></p>
-      <a href="#contact" class="btn">Contact Me</a>
-    </div>
-  </header>
+    <!-- Hero Section -->
+    <header id="hero">
+        <h1>Giovanni Nanuseb</h1>
+        <p>Innovator | Web Developer | Creative Problem Solver</p>
+    </header>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>Project 1</h3>
-      <p>Description of the project.</p>
-      <a href="https://github.com" target="_blank">View Code</a>
-    </div>
-    <div class="project">
-      <h3>Project 2</h3>
-      <p>Description of the project.</p>
-      <a href="https://example.com" target="_blank">View Live</a>
-    </div>
-  </section>
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skill">
+            <h3>HTML</h3>
+            <div class="progress-bar"><span style="width: 90%;"></span></div>
+        </div>
+        <div class="skill">
+            <h3>CSS</h3>
+            <div class="progress-bar"><span style="width: 85%;"></span></div>
+        </div>
+        <div class="skill">
+            <h3>JavaScript</h3>
+            <div class="progress-bar"><span style="width: 75%;"></span></div>
+        </div>
+    </section>
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="skills-list">
-      <span>HTML</span>
-      <span>CSS</span>
-      <span>JavaScript</span>
-      <span>React</span>
-    </div>
-  </section>
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Weather Assistant App</h3>
+            <p>A fully functional app providing real-time weather forecasts using an API.</p>
+            <a href="https://kimnanuseb.github.io/Weather-Assistent-App/" target="_blank">View Project</a>
+        </div>
+        <div class="project">
+            <h3>Cook With Kimi</h3>
+            <p>An interactive recipe assistant using AI for meal planning and cooking inspiration.</p>
+            <a href="https://kimnanuseb.github.io/cook-with-kimi/" target="_blank">View Project</a>
+        </div>
+    </section>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Write a short bio about yourself. Highlight your expertise and interests.</p>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <form>
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
-      
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-      
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" rows="5" required></textarea>
-      
-      <button type="submit">Send</button>
-    </form>
-  </section>
-
-  <footer>
-    <p>&copy; 2024 Giovanni Nanuseb. All rights reserved.</p>
-  </footer>
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
 </body>
 </html>
