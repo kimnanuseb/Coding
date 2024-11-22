@@ -5,75 +5,72 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
 /* Hero Section */
 #hero {
-    text-align: center;
-    padding: 50px;
     background: linear-gradient(to right, #4e54c8, #8f94fb);
     color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero-content button {
+    background: white;
+    color: #4e54c8;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 /* Skills Section */
-#skills {
-    padding: 20px;
-}
-
-.skill {
-    margin: 10px 0;
-}
-
-.progress-bar {
+#skills .progress-bar {
     background: #e0e0e0;
-    border-radius: 5px;
-    overflow: hidden;
     position: relative;
+    height: 10px;
+    border-radius: 5px;
 }
 
-.progress-bar span {
+#skills .progress-bar span {
     display: block;
-    height: 10px;
+    height: 100%;
     background: #4e54c8;
     border-radius: 5px;
-    transition: width 0.3s ease;
 }
 
 /* Projects Section */
-#projects {
-    padding: 20px;
+#projects .project-card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.project {
-    margin: 10px 0;
-    background: #f7f7f7;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+.project-card a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #4e54c8;
 }
 
 /* Contact Section */
-#contact {
-    padding: 20px;
-    text-align: center;
-}
-
-form input, form textarea {
-    width: 90%;
+#contact form input, #contact form textarea {
+    width: 100%;
     margin: 10px 0;
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 5px;
 }
 
-form button {
-    padding: 10px 20px;
+#contact form button {
     background: #4e54c8;
     color: white;
+    padding: 10px;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
-    transition: background 0.3s ease;
-}
-
-form button:hover {
-    background: #8f94fb;
 }
